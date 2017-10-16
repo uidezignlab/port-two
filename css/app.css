@@ -75,7 +75,7 @@ body, h1, h2, h3, h4, h5, h6, input[type="text"], input[type="password"], input[
   position: fixed;
   top: 0;
   left: 0;
-  width: calc(100% - 4.266667%);
+  width: 100%;
   height: 65px;
   background: linear-gradient(to right, rgba(255, 255, 255, 0.48), rgba(255, 255, 255, 0.48)), url("../img/strip.jpg");
   box-shadow: 0 1px 15px -2px #c3bed3;
@@ -132,7 +132,7 @@ body, h1, h2, h3, h4, h5, h6, input[type="text"], input[type="password"], input[
   top: 0;
   left: 0;
   z-index: 2100;
-  width: calc(100% - 4.266667%);
+  width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.3);
   opacity: 0;
