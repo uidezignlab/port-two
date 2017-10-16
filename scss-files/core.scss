@@ -128,6 +128,9 @@ body, h1, h2, h3, h4, h5, h6, input[type="text"], input[type="password"], input[
     top: -35px;
     visibility: hidden;
   }
+  @include mq(500, max){
+    padding: 0 1rem;
+  }
 }
 .logo{
   a{
