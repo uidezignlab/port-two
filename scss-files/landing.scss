@@ -1,0 +1,305 @@
+.banner-one{
+  width: 100%;
+  min-height: 570px;
+  margin-top: 67px;
+  background: linear-gradient(to right, #17a5ff, transparent), url("../img/banner.jpg") center 30%;
+  padding: 0 10rem;
+  display: flex;
+  align-items: center;
+  div{
+    width: 100%;
+    h1{
+      color: white;
+      text-transform: uppercase;
+    }
+    p{
+      color: whitesmoke;
+    }
+    .ui-btn{
+      text-transform: uppercase;
+      margin-top: 1rem;
+      background: transparent;
+      border: 1px solid #17a3ff;
+    }
+  }
+  @include mq($tablet, max){
+    padding: 0 3rem;
+  }
+}
+.banner-social{
+  display: flex;
+  margin: 1rem 0;
+  a{
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    margin-right: 0.5rem;
+    border-radius: 50%;
+    //border: 1px solid #2686ff;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    i{
+      //color: whitesmoke;
+    }
+  }
+}
+.about-me{
+  padding: 3rem 0;
+  h1{
+    text-align: center;
+  }
+  p{
+    text-align: center;
+    width: 70%;
+    margin: 2rem auto;
+    a{
+      display: inline-block;
+      text-decoration: none;
+      padding: 3px 0.6rem;
+      border-top: 1px solid #0093d3;
+      border-bottom: 1px solid #0093d3;
+      border-left: 1px solid transparent;
+      border-right: 1px solid transparent;
+      margin-top: 1rem;
+      transition: all 500ms ease-in-out;
+      &:hover{
+        color: #2779d2;
+        border-color: #0093d3;
+      }
+    }
+    @include mq($tablet, max){
+      width: 96%;
+    }
+  }
+}
+
+.me{
+  width: 100%;
+  display: flex;
+  margin: 4rem 0;
+  //min-height: 500px;
+  .me-content{
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .me-content-c{
+      padding: 1rem;
+      margin-bottom: 2rem;
+      i{
+        transition: color 400ms;
+      }
+      span{
+        display: inline-block;
+        font:{
+          weight: bold;
+        }
+        margin-bottom: 0.8rem;
+        position: relative;
+        &:before{
+          content: '';
+          position: absolute;
+          bottom: -5px;
+          left: 10%;
+          width: 0;
+          height: 1px;
+          background: #ff008f;
+          transition: width 400ms;
+        }
+      }
+      p{
+        font:{
+          size: 0.9rem;
+        }
+      }
+      &:hover{
+        span{
+          &:before{
+            width: 80%;
+          }
+        }
+        i{
+          color: #0090ff;
+        }
+      }
+    }
+    &:first-child{
+      .me-content-c{
+        text-align: right;
+        p{
+          text-align: right;
+          font:{
+            size: 0.9rem;
+          }
+        }
+      }
+    }
+  }
+  .me-image{
+    flex-basis: 40%;
+   background: linear-gradient(to right, white, transparent, white), url('../img/me2.jpg') center top;
+  }
+  @include mq(645, max){
+    flex-wrap: wrap;
+    .me-content{
+      flex-basis: 100%;
+      flex-direction: row;
+      .me-content-c{
+        flex-basis: 50%;
+        text-align: center;
+        p{
+          text-align: center;
+        }
+      }
+      &:first-child{
+        .me-content-c{
+          text-align: center;
+          p{
+            text-align: center;
+            font:{
+              size: 0.9rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  @include mq(475, max){
+    .me-content{
+      flex-wrap: wrap;
+      .me-content-c{
+        flex-basis: 100%;
+      }
+    }
+  }
+}
+
+.from-blog{
+  margin: 5rem 0;
+  &>div{
+    padding: 6rem 0 3rem 0;
+    display: flex;
+    justify-content: space-between;
+    .post-copy{
+      flex-basis: 23%;
+      position: relative;
+      img{
+        width: 100%;
+        border-radius: 3px;
+      }
+      .pcopy-hover{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 3px;
+        background: linear-gradient(to bottom, transparent, transparent, rgba(0,0,0,0.9999));
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 0.5rem 2rem;
+        overflow: hidden;
+        span{
+          color: white;
+        }
+        a{
+          strong{
+            color: whitesmoke;
+            text-transform: uppercase;
+          }
+        }
+        .pass-thru{
+          position: absolute;
+          top: 80%;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(to bottom, transparent, rgba(0, 172, 255, 0.71), transparent);
+          transform: rotateZ(45deg);
+          //opacity: 0;
+          transition: all 500ms;
+          //will-change: opacity;
+        }
+        &:hover{
+          .pass-thru{
+            top: -80%;
+            //opacity: 1;
+          }
+        }
+      }
+    }
+    @include mq(720, max){
+      flex-wrap: wrap;
+      .post-copy{
+        flex-basis: 48%;
+        margin-bottom: 2rem;
+      }
+    }
+    @include mq(420, max){
+      .post-copy{
+        flex-basis: 100%;
+      }
+    }
+  }
+}
+
+.subscribe{
+  width: 100%;
+  border-bottom: 2px solid lightgrey;
+  margin: 1rem 0 1rem 0;
+  position: relative;
+  .sub-box{
+    position: absolute;
+    top: -30px;
+    left: 10%;
+    width: 80%;
+    min-height: 120px;
+    box-shadow: 0 2px 15px 1px lightgrey;
+    border-top: 5px solid #548cff;
+    background: white;
+    border-radius: 2px;
+    padding: 0.8rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 500ms;
+    form{
+      flex-basis: 50%;
+      .form-group{
+        display: flex;
+        margin: 0;
+        .form-control{
+          flex-basis: 80%;
+          border-radius: 0;
+        }
+        button{
+          flex-basis: 20%;
+          border-radius: 0;
+          background: #137fff;
+          i{
+            color: white;
+          }
+        }
+      }
+    }
+    &>div{
+      p{
+        margin: 0;
+      }
+    }
+    @include mq(885, max){
+      width: 94%;
+      left: 3%;
+    }
+    @include mq(710, max){
+      display: block;
+      form{
+        margin-top: 1rem;
+      }
+    }
+  }
+}
