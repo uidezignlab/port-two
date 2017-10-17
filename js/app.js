@@ -2,8 +2,7 @@
 
 $(document).ready(function () {
 
-    function isOnScreen(element)
-    {
+    function isOnScreen(element){
         var curPos = element.offset();
         var curTop = curPos.top - $(window).scrollTop();
         var screenHeight = $(window).height();
@@ -56,5 +55,26 @@ $(document).ready(function () {
             $('.sidemenu-wrapper').removeClass('hideout');
         }
     };
+
+    //owl corousel setup and initialization
+
+    $('.owl-carousel').owlCarousel({
+        animateOut: 'slideOutDown',
+        animateIn: 'flipInX',
+        items:1,
+        margin:30,
+        stagePadding:30,
+        smartSpeed:450,
+        autoplay: true,
+        loop: true
+    });
+
+    //initialize skills progress bars
+    $('.prog span').each(function () {
+        $(this).css({
+            width: $(this).data('length')
+        });
+        $(this).find('em').text($(this).data('length'))
+    })
 
 });
