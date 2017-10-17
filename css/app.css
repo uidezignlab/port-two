@@ -747,4 +747,61 @@ body, h1, h2, h3, h4, h5, h6, input[type="text"], input[type="password"], input[
       .testimonials .owl-carousel .test-item {
         padding: 2rem 0.5rem; } }
 
+.contact-wrapper {
+  width: 100%;
+  min-height: 570px;
+  margin: 65px 0 1.5rem 0;
+  display: flex; }
+  .contact-wrapper .map {
+    flex-basis: 76%; }
+  .contact-wrapper .contact-form {
+    flex-basis: 24%;
+    background: whitesmoke;
+    padding: 2rem; }
+    .contact-wrapper .contact-form .social-connect strong {
+      text-transform: uppercase;
+      color: #607d8b; }
+    .contact-wrapper .contact-form .social-connect p {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 1rem; }
+      .contact-wrapper .contact-form .social-connect p i {
+        display: inline-block;
+        font-size: 1.2rem;
+        color: royalblue;
+        cursor: pointer; }
+    .contact-wrapper .contact-form form {
+      margin: 2rem 0;
+      border-top: 1px solid #607d8b;
+      border-bottom: 1px solid #607d8b;
+      padding: 2rem 0; }
+      .contact-wrapper .contact-form form input, .contact-wrapper .contact-form form textarea {
+        border-radius: 0; }
+      .contact-wrapper .contact-form form button i {
+        color: whitesmoke; }
+  @media (max-width: 63.75rem) {
+    .contact-wrapper .map {
+      flex-basis: 65%; }
+    .contact-wrapper .contact-form {
+      flex-basis: 35%; } }
+  @media (max-width: 46.875rem) {
+    .contact-wrapper .map {
+      flex-basis: 55%; }
+    .contact-wrapper .contact-form {
+      flex-basis: 45%; } }
+  @media (max-width: 30rem) {
+    .contact-wrapper .map {
+      flex-basis: 50%; }
+    .contact-wrapper .contact-form {
+      flex-basis: 50%; } }
+  @media (max-width: 26.25rem) {
+    .contact-wrapper {
+      min-height: 100px;
+      flex-wrap: wrap; }
+      .contact-wrapper .map {
+        flex-basis: 100%;
+        height: 250px; }
+      .contact-wrapper .contact-form {
+        flex-basis: 100%; } }
+
 /*# sourceMappingURL=app.css.map */
