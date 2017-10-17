@@ -804,4 +804,55 @@ body, h1, h2, h3, h4, h5, h6, input[type="text"], input[type="password"], input[
       .contact-wrapper .contact-form {
         flex-basis: 100%; } }
 
+.fof-banner {
+  width: 100%;
+  min-height: 570px;
+  margin-top: 67px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.66), rgba(255, 255, 255, 0.66)), url("../img/deco.png"); }
+  .fof-banner > div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    user-select: none;
+    user-drag: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    padding: 0 0.8rem; }
+    .fof-banner > div .f-box {
+      width: 200px;
+      height: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .fof-banner > div .f-box img {
+        width: 100%; }
+      .fof-banner > div .f-box h1 {
+        font-size: 12rem; }
+      .fof-banner > div .f-box:first-child {
+        justify-content: flex-end; }
+      .fof-banner > div .f-box:last-child {
+        justify-content: flex-start; }
+      @media (max-width: 37.5rem) {
+        .fof-banner > div .f-box {
+          width: 150px;
+          height: 150px; } }
+      @media (max-width: 29.375rem) {
+        .fof-banner > div .f-box h1 {
+          font-size: 8rem; } }
+  .fof-banner h3 {
+    text-align: center; }
+  .fof-banner p {
+    text-align: center; }
+  @media (max-width: 29.375rem) {
+    .fof-banner {
+      min-height: 460px; } }
+
 /*# sourceMappingURL=app.css.map */
