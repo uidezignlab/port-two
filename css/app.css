@@ -170,6 +170,29 @@ body, h1, h2, h3, h4, h5, h6, input[type="text"], input[type="password"], input[
     .sidemenu-wrapper.hideout .side-nav {
       left: 0; }
 
+.ui-pagination {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 2rem; }
+  .ui-pagination a {
+    text-decoration: none;
+    width: 39px;
+    height: 39px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0.5rem;
+    border: 1px solid #ececec;
+    transition: all 500ms; }
+    .ui-pagination a:hover {
+      background: royalblue;
+      color: white;
+      border-color: royalblue; }
+      .ui-pagination a:hover i {
+        color: white; }
+
 .padder {
   width: 100%;
   padding: 2rem 7rem; }
@@ -861,10 +884,11 @@ body, h1, h2, h3, h4, h5, h6, input[type="text"], input[type="password"], input[
   padding: 2.5rem 2rem;
   min-height: 1000px;
   /********************blog one*********************/
-  /********************end blog one*********************/ }
+  /********************end blog one*********************/
+  /**********************blog two**********************/
+  /**********************end blog two**********************/ }
   .blog-wrapper .blog-one {
     width: 100%;
-    min-height: 200px;
     padding: 0 4rem;
     display: flex;
     justify-content: space-between; }
@@ -898,28 +922,6 @@ body, h1, h2, h3, h4, h5, h6, input[type="text"], input[type="password"], input[
               color: white; }
               .blog-wrapper .blog-one .blog-one-posts .blog-o-post .blog-o-info a:hover i {
                 color: white; }
-      .blog-wrapper .blog-one .blog-one-posts .ui-pagination {
-        width: 100%;
-        display: flex;
-        justify-content: flex-end;
-        padding-right: 2rem; }
-        .blog-wrapper .blog-one .blog-one-posts .ui-pagination a {
-          text-decoration: none;
-          width: 39px;
-          height: 39px;
-          border-radius: 50%;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          margin-right: 0.5rem;
-          border: 1px solid #ececec;
-          transition: all 500ms; }
-          .blog-wrapper .blog-one .blog-one-posts .ui-pagination a:hover {
-            background: royalblue;
-            color: white;
-            border-color: royalblue; }
-            .blog-wrapper .blog-one .blog-one-posts .ui-pagination a:hover i {
-              color: white; }
       @media (max-width: 57.8125rem) {
         .blog-wrapper .blog-one .blog-one-posts {
           flex-basis: 100%; } }
@@ -1032,6 +1034,42 @@ body, h1, h2, h3, h4, h5, h6, input[type="text"], input[type="password"], input[
     @media (max-width: 57.8125rem) {
       .blog-wrapper .blog-one {
         flex-wrap: wrap; } }
+  .blog-wrapper .blog-two {
+    padding: 0 8rem;
+    width: 100%;
+    margin-bottom: 5rem; }
+    .blog-wrapper .blog-two .blog-two-post {
+      width: 100%;
+      margin-bottom: 4rem;
+      display: flex;
+      justify-content: space-between; }
+      .blog-wrapper .blog-two .blog-two-post .blog-t-info {
+        flex-basis: 55%;
+        padding: 1rem; }
+        .blog-wrapper .blog-two .blog-two-post .blog-t-info p {
+          margin-top: 1rem; }
+      .blog-wrapper .blog-two .blog-two-post .blog-t-img {
+        flex-basis: 41%; }
+        .blog-wrapper .blog-two .blog-two-post .blog-t-img img {
+          width: 100%; }
+      @media (max-width: 49.0625rem) {
+        .blog-wrapper .blog-two .blog-two-post {
+          flex-wrap: wrap; }
+          .blog-wrapper .blog-two .blog-two-post .blog-t-info {
+            flex-basis: 100%;
+            padding: 0 1rem !important; }
+          .blog-wrapper .blog-two .blog-two-post .blog-t-img {
+            flex-basis: 100%;
+            order: -1;
+            margin-bottom: 1rem; } }
+    @media (max-width: 70.3125rem) {
+      .blog-wrapper .blog-two {
+        padding: 0 3rem; }
+        .blog-wrapper .blog-two .blog-two-post .blog-t-info {
+          padding: 0; } }
+    @media (max-width: 56.25rem) {
+      .blog-wrapper .blog-two {
+        padding: 0 0.5rem; } }
   @media (max-width: 63.4375rem) {
     .blog-wrapper {
       padding: 2.5rem 0.6rem; } }

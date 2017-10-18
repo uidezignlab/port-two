@@ -6,7 +6,6 @@
   /********************blog one*********************/
   .blog-one{
     width: 100%;
-    min-height: 200px; // tobe removed
     padding: 0 4rem;
     display: flex;
     justify-content: space-between;
@@ -46,32 +45,6 @@
               i{
                 color: white;
               }
-            }
-          }
-        }
-      }
-      .ui-pagination{
-        width: 100%;
-        display: flex;
-        justify-content: flex-end;
-        padding-right: 2rem;
-        a{
-          text-decoration: none;
-          width: 39px;
-          height: 39px;
-          border-radius: 50%;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          margin-right: 0.5rem;
-          border: 1px solid #ececec;
-          transition: all 500ms;
-          &:hover{
-            background: royalblue;
-            color: white;
-            border-color: royalblue;
-            i{
-              color: white;
             }
           }
         }
@@ -220,6 +193,57 @@
     }
   }
   /********************end blog one*********************/
+
+  /**********************blog two**********************/
+  .blog-two{
+    padding: 0 8rem;
+    width: 100%;
+    .blog-two-post{
+      width: 100%;
+      margin-bottom: 4rem;
+      display: flex;
+      justify-content: space-between;
+      .blog-t-info{
+        flex-basis: 55%;
+        padding: 1rem;
+        p{
+          margin-top: 1rem;
+        }
+      }
+      .blog-t-img{
+        flex-basis: 41%;
+        img{
+          width: 100%;
+        }
+      }
+      @include mq(785, max){
+        flex-wrap: wrap;
+        .blog-t-info{
+          flex-basis: 100%;
+          padding: 0 1rem!important;
+        }
+        .blog-t-img{
+          flex-basis: 100%;
+          order: -1;
+          margin-bottom: 1rem;
+        }
+      }
+    }
+    margin-bottom: 5rem;
+    @include mq(1125, max){
+      padding: 0 3rem;
+      .blog-two-post{
+        .blog-t-info{
+          padding: 0;
+        }
+      }
+    }
+    @include mq(900, max){
+      padding: 0 0.5rem;
+    }
+  }
+  /**********************end blog two**********************/
+
   @include mq(1015, max){
     padding: 2.5rem 0.6rem;
   }
