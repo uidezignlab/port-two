@@ -200,7 +200,7 @@
     width: 100%;
     .blog-two-post{
       width: 100%;
-      margin-bottom: 4rem;
+      margin-bottom: 1rem;
       display: flex;
       justify-content: space-between;
       .blog-t-info{
@@ -243,6 +243,52 @@
     }
   }
   /**********************end blog two**********************/
+
+  .comments{
+    width: 100%;
+    &>strong{
+      display: inline-block;
+      margin-bottom: 1.5rem;
+    }
+    .comment{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 1.5rem;
+      .comm-img{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        margin-right: 1rem;
+        img{
+          width: 100%;
+          border-radius: inherit;
+        }
+      }
+      .comm-info{
+        flex-basis: calc(100% - 80px);
+        p{
+          margin-bottom: 0.1rem;
+        }
+      }
+    }
+  }
+
+  .comm-form{
+    padding: 0 3rem;
+    &>strong{
+      display: inline-block;
+      margin-bottom: 1.5rem;
+    }
+    .ui-btn{
+      i{
+        color: whitesmoke;
+      }
+    }
+    @include mq(470, max){
+      padding: 0 0;
+    }
+  }
 
   @include mq(1015, max){
     padding: 2.5rem 0.6rem;
