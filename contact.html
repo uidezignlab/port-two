@@ -181,27 +181,20 @@
 </div>
 <!--end footer section-->
 
+<!--back to top button-->
+<div class="back-top">
+    <a href="#"><i class="fa fa-angle-up"></i></a>
+</div>
+<!--end back to top button-->
+
 <script src="3rdparty/jquery-3.2.1.min.js"></script>
+<script src="3rdparty/typed.js"></script>
 <script src="3rdparty/OwlCarousel2-2.2.1/owl.carousel.min.js"></script>
 <script src="js/app.js"></script>
 
 <!--google map-->
 
-<script>
-    function myMap() {
-        var myCenter = new google.maps.LatLng(51.508742,-0.120850);
-        var mapCanvas = document.getElementById("map");
-        var mapOptions = {center: myCenter, zoom: 5};
-        var map = new google.maps.Map(mapCanvas, mapOptions);
-        var marker = new google.maps.Marker({position:myCenter});
-        marker.setMap(map);
-
-        var infowindow = new google.maps.InfoWindow({
-            content: "Hello World!"
-        });
-        infowindow.open(map,marker);
-    }
-</script>
+<script src="js/googleMap.js"></script>
 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcYCyiRCu17eKBKl0qt9dbLKdXBl5JRTI&callback=myMap"></script>
 

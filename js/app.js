@@ -92,7 +92,7 @@ $(document).ready(function () {
             width: $(this).data('length')
         });
         $(this).find('em').text($(this).data('length'));
-    })
+    });
 
     //coming soon countdown
 
@@ -126,5 +126,23 @@ $(document).ready(function () {
         //     document.getElementById("demo").innerHTML = "EXPIRED";
         // }
     }, 1000);
+
+
+    //scroll button
+        var backTopBtn=500,
+        scrollSpeed=500,
+        topEl = $('.back-top'),
+        topElChild = $('.back-top a');
+    $(window).scroll(function(){
+        if($(window).scrollTop()>=backTopBtn){
+            topEl.addClass('appear');
+        }else{
+            topEl.removeClass('appear');
+        }
+    });
+    topElChild.on('click',function(e){
+        e.preventDefault();
+        $('html, body').animate({scrollTop:0},scrollSpeed);return false;
+    });
 
 });

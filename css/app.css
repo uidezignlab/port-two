@@ -270,6 +270,48 @@ body, h1, h2, h3, h4, h5, h6, input[type="text"], input[type="password"], input[
     left: 0;
     text-align: center; }
 
+.appear {
+  opacity: 1;
+  visibility: visible; }
+
+.disappear {
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0.7); }
+
+.back-top {
+  position: fixed;
+  right: 0;
+  bottom: 25px;
+  margin: 0 25px 0 0;
+  z-index: 9999;
+  transition: 0.35s;
+  transform: scale(0.7); }
+
+.back-top.appear {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1); }
+
+.back-top a {
+  text-decoration: none;
+  border: 0 none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 46px;
+  height: 46px;
+  opacity: 1;
+  transition: all 0.3s;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 26px;
+  color: whitesmoke;
+  background: linear-gradient(to right, #17a3ff, #7305ff); }
+
+.back-top a i {
+  color: whitesmoke; }
+
 .banner-one {
   width: 100%;
   min-height: 570px;
@@ -854,11 +896,6 @@ body, h1, h2, h3, h4, h5, h6, input[type="text"], input[type="password"], input[
     align-items: center;
     margin-bottom: 1rem;
     user-select: none;
-    user-drag: none;
-    -moz-user-select: none;
-    -webkit-user-drag: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
     padding: 0 0.8rem; }
     .fof-banner > div .f-box {
       width: 200px;
