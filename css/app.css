@@ -252,6 +252,14 @@ body, h1, h2, h3, h4, h5, h6, input[type="text"], input[type="password"], input[
       font-size: 0.94rem; }
     .footer .footer-heist .footer-c .banner-social a {
       box-shadow: 0 0 10px 1px lightgrey; }
+    @media (max-width: 61.25rem) {
+      .footer .footer-heist .footer-c {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 2rem; }
+        .footer .footer-heist .footer-c p {
+          text-align: center; } }
     .footer .footer-heist.hideout {
       opacity: 1;
       transform: translateY(-80px); }
@@ -275,6 +283,9 @@ body, h1, h2, h3, h4, h5, h6, input[type="text"], input[type="password"], input[
     .banner-one div h1 {
       color: white;
       text-transform: uppercase; }
+      .banner-one div h1 span {
+        color: inherit;
+        text-transform: inherit; }
       @media (max-width: 28.125rem) {
         .banner-one div h1 {
           font-size: 2.0rem; } }
@@ -1105,5 +1116,60 @@ body, h1, h2, h3, h4, h5, h6, input[type="text"], input[type="password"], input[
   @media (max-width: 63.4375rem) {
     .blog-wrapper {
       padding: 2.5rem 0.6rem; } }
+
+.soon-wrapper {
+  width: 100%;
+  min-height: 600px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.68), transparent), url("../img/soon.jpg");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .soon-wrapper .count-box {
+    display: flex;
+    margin-bottom: 2.5rem; }
+    .soon-wrapper .count-box .box {
+      width: 160px;
+      height: 160px;
+      margin-right: 5px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transition: all 400ms linear; }
+      .soon-wrapper .count-box .box h1 {
+        font-size: 6rem;
+        transition: all 400ms linear; }
+  .soon-wrapper .ui-btn {
+    font-weight: bold; }
+  @media (max-width: 44.375rem) {
+    .soon-wrapper {
+      padding: 1rem; }
+      .soon-wrapper h2 {
+        text-align: center; }
+      .soon-wrapper p {
+        text-align: center; }
+      .soon-wrapper .count-box .box {
+        width: 110px;
+        height: 110px; }
+        .soon-wrapper .count-box .box h1 {
+          font-size: 4rem; } }
+  @media (max-width: 30.75rem) {
+    .soon-wrapper .count-box .box {
+      width: 80px;
+      height: 80px; }
+      .soon-wrapper .count-box .box h1 {
+        font-size: 2rem; } }
+  @media (max-width: 25rem) {
+    .soon-wrapper p {
+      width: 90%;
+      margin: 0 auto; }
+    .soon-wrapper h2 {
+      font-size: 1.6rem; }
+    .soon-wrapper .count-box .box {
+      width: 70px;
+      height: 70px; }
+      .soon-wrapper .count-box .box h1 {
+        font-size: 1.8rem; } }
 
 /*# sourceMappingURL=app.css.map */

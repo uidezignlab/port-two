@@ -18,7 +18,11 @@ $(document).ready(function () {
                 _uiNav.addClass('remove');
                 scrollPosition = _scrollTop;
             }else{
-                if(_scrollTop < (scrollPosition - 100)){
+                if(_scrollTop < 180){
+                    //show menu
+                    _uiNav.removeClass('remove');
+                    scrollPosition = _scrollTop;
+                }else if(_scrollTop < (scrollPosition - 100)){
                     //show menu
                     _uiNav.removeClass('remove');
                     scrollPosition = _scrollTop;
@@ -37,7 +41,6 @@ $(document).ready(function () {
 
     //if user reloads while at the bottom of the page, make sure the footer appears
     if(isOnScreen($('.footer'))) {
-        /* Code here... */
         $('.footer-heist').addClass('hideout');
     }else{
         $('.footer-heist').removeClass('hideout');
@@ -45,7 +48,7 @@ $(document).ready(function () {
 
     // toggle side nav
     $('.toggle-sidebar').on('click', function () {
-        $('.sidemenu-wrapper').toggleClass('hideout')
+        $('.sidemenu-wrapper').toggleClass('hideout');
     });
 
     //hide side nav
@@ -55,6 +58,20 @@ $(document).ready(function () {
             $('.sidemenu-wrapper').removeClass('hideout');
         }
     };
+
+    //count up js initialization
+    $('.typedd').typed({
+        strings: ["Portfolio.", "Website.", "Profile", "Brand"],
+        typeSpeed: 100,
+        loop: true,
+        smartBackspace: true
+    });
+    $('.typedd2').typed({
+        strings: ["Graphic Designer.", "Photographer.", "Web Developer.", "Design Consultant."],
+        typeSpeed: 100,
+        loop: true,
+        smartBackspace: true
+    });
 
     //owl corousel setup and initialization
 
@@ -74,7 +91,7 @@ $(document).ready(function () {
         $(this).css({
             width: $(this).data('length')
         });
-        $(this).find('em').text($(this).data('length'))
+        $(this).find('em').text($(this).data('length'));
     })
 
 });
