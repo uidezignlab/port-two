@@ -1120,11 +1120,16 @@ body, h1, h2, h3, h4, h5, h6, input[type="text"], input[type="password"], input[
 .soon-wrapper {
   width: 100%;
   min-height: 600px;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.68), transparent), url("../img/soon.jpg");
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.68), transparent), url("../img/soon.jpg");
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center; }
+  .soon-wrapper h2 {
+    color: white; }
+  .soon-wrapper p {
+    color: #e2e2e2;
+    font-weight: 600; }
   .soon-wrapper .count-box {
     display: flex;
     margin-bottom: 2.5rem; }
@@ -1139,7 +1144,13 @@ body, h1, h2, h3, h4, h5, h6, input[type="text"], input[type="password"], input[
       transition: all 400ms linear; }
       .soon-wrapper .count-box .box h1 {
         font-size: 6rem;
-        transition: all 400ms linear; }
+        transition: all 400ms linear;
+        color: whitesmoke; }
+        .soon-wrapper .count-box .box h1 span {
+          color: white; }
+      .soon-wrapper .count-box .box > span {
+        color: white;
+        font-weight: 600; }
   .soon-wrapper .ui-btn {
     font-weight: bold; }
   @media (max-width: 44.375rem) {

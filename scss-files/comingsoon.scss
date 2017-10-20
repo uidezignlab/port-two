@@ -1,11 +1,18 @@
 .soon-wrapper{
   width: 100%;
   min-height: 600px;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.68), transparent), url("../img/soon.jpg");
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.68), transparent), url("../img/soon.jpg");
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  h2{
+    color: white;
+  }
+  p{
+    color: #e2e2e2;
+    font-weight: 600;
+  }
   .count-box{
     display: flex;
     margin-bottom: 2.5rem;
@@ -24,12 +31,16 @@
           size: 6rem;
         }
         transition:  all 400ms linear;
+        color: whitesmoke;
         span{
-
+          color: white;
         }
       }
       &>span{
-
+        color: white;
+        font:{
+          weight: 600;
+        }
       }
     }
   }
