@@ -284,6 +284,12 @@
               background: #ff00cc;
             }
           }
+          @include mq(730, max){
+            flex-basis: 47%;
+          }
+          @include mq(440, max){
+            flex-basis: 100%;
+          }
         }
       }
       &.current{

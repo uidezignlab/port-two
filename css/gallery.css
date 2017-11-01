@@ -208,6 +208,12 @@
               color: #e6e6e6; }
           .photo-container .photo-wrapper .pics-collection .photos .photo:hover .photo-btn {
             background: #ff00cc; }
+          @media (max-width: 45.625rem) {
+            .photo-container .photo-wrapper .pics-collection .photos .photo {
+              flex-basis: 47%; } }
+          @media (max-width: 27.5rem) {
+            .photo-container .photo-wrapper .pics-collection .photos .photo {
+              flex-basis: 100%; } }
       .photo-container .photo-wrapper .pics-collection.current {
         display: block; }
   @media (max-width: 55.625rem) {
