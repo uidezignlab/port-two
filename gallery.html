@@ -110,7 +110,7 @@
         </div>
         <ul class="categories-list list-unstyled">
             <li>
-                <a href="#">
+                <a data-collection="paris" href="#" class="current">
                     <span class="category-image"><img src="img/avatar2.jpg" alt=""></span>
                     <span class="category-name">
                         <strong>Paris, France</strong>
@@ -120,7 +120,7 @@
                 </a>
             </li>
             <li>
-                <a href="#" class="current">
+                <a data-collection="nairobi" href="#">
                     <span class="category-image"><img src="img/user2.jpg" alt=""></span>
                     <span class="category-name">
                         <strong>Nairobi, Kenya</strong>
@@ -130,7 +130,7 @@
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a data-collection="paris" href="#">
                     <span class="category-image"><img src="img/user.jpg" alt=""></span>
                     <span class="category-name">
                         <strong>New York, USA</strong>
@@ -140,7 +140,7 @@
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a data-collection="nairobi" href="#">
                     <span class="category-image"><img src="img/avatar2.jpg" alt=""></span>
                     <span class="category-name">
                         <strong>London, UK</strong>
@@ -150,7 +150,7 @@
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a data-collection="paris" href="#">
                     <span class="category-image"><img src="img/user2.jpg" alt=""></span>
                     <span class="category-name">
                         <strong>Nairobi, Kenya</strong>
@@ -160,7 +160,7 @@
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a data-collection="nairobi" href="#">
                     <span class="category-image"><img src="img/user.jpg" alt=""></span>
                     <span class="category-name">
                         <strong>New York, USA</strong>
@@ -172,10 +172,10 @@
         </ul>
     </div>
     <div class="photo-wrapper">
-        <div class="current pics-collection">
+        <div id="paris" class="current animated pics-collection">
             <div class="top-strip">
                 <span>
-                    <strong>London, UK</strong>
+                    <strong>Paris, France</strong>
                 <em>12 Oct, 2017</em>
                 </span>
                 <span>
@@ -242,11 +242,11 @@
                 </div>
             </div>
         </div>
-        <div class="pics-collection">
+        <div id="nairobi" class="pics-collection animated">
             <div class="top-strip">
                 <span>
-                    <strong>London, UK</strong>
-                <em>12 Oct, 2017</em>
+                    <strong>Nairobi, Kenya</strong>
+                <em>29 Jan, 2017</em>
                 </span>
                 <span>
                     <i class="fa fa-th"></i>
@@ -254,6 +254,22 @@
                 </span>
             </div>
             <div class="photos">
+                <div class="photo">
+                    <img src="img/photo7.jpg" alt="">
+                    <a href="#" class="photo-btn"><i class="fa fa-plus"></i></a>
+                    <div class="photo-info">
+                        <em>Free Style</em>
+                        <strong>Vr Gear Test</strong>
+                    </div>
+                </div>
+                <div class="photo">
+                    <img src="img/photo.jpg" alt="">
+                    <a href="#" class="photo-btn"><i class="fa fa-plus"></i></a>
+                    <div class="photo-info">
+                        <em>Free Style</em>
+                        <strong>Vr Gear Test</strong>
+                    </div>
+                </div>
                 <div class="photo">
                     <img src="img/photo2.jpg" alt="">
                     <a href="#" class="photo-btn"><i class="fa fa-plus"></i></a>
@@ -288,22 +304,6 @@
                 </div>
                 <div class="photo">
                     <img src="img/photo6.jpg" alt="">
-                    <a href="#" class="photo-btn"><i class="fa fa-plus"></i></a>
-                    <div class="photo-info">
-                        <em>Free Style</em>
-                        <strong>Vr Gear Test</strong>
-                    </div>
-                </div>
-                <div class="photo">
-                    <img src="img/photo7.jpg" alt="">
-                    <a href="#" class="photo-btn"><i class="fa fa-plus"></i></a>
-                    <div class="photo-info">
-                        <em>Free Style</em>
-                        <strong>Vr Gear Test</strong>
-                    </div>
-                </div>
-                <div class="photo">
-                    <img src="img/photo.jpg" alt="">
                     <a href="#" class="photo-btn"><i class="fa fa-plus"></i></a>
                     <div class="photo-info">
                         <em>Free Style</em>
@@ -313,6 +313,37 @@
             </div>
         </div>
     </div>
+
+    <!--photo detail-->
+    <div class="photo-detail" id="photo-detail">
+        <div class="detail-container">
+            <div class="photo-full">
+                <img src="img/full1.jpg" alt="">
+            </div>
+            <div class="description">
+                <h4>Range SuperShot</h4>
+                <p>
+                    Chuck landjaeger pork belly
+                    shankle shank.Tri-tip prosciutto
+                    ground round hamburger jowl frankfurter
+                </p>
+                <div class="share-pic">
+                    <i class="fa fa-facebook-f"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-instagram"></i>
+                    <i class="fa fa-share-alt"></i>
+                    <i class="fa fa-heart-o"></i>
+                </div>
+                <div class="next-prev">
+                    <a href="#"><i class="fa fa-angle-left"></i></a>
+                    <a href="#"><i class="fa fa-angle-right"></i></a>
+                </div>
+                <a href="#" class="cancel">Cancel</a>
+            </div>
+        </div>
+    </div>
+    <!--end photo detail-->
+
 </div>
 <!--end photo container wrapper-->
 
